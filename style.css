@@ -1,103 +1,103 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-/* General Page Styling */
+/* General Styling */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #000 url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
+    background: #f8f9fa; /* Light background */
+    color: #222;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+    overflow-x: hidden;
 }
 
-/* Logo Styling */
-.logo {
-    width: 150px;
-    margin-top: 20px;
+/* Neon Glow Effects */
+.neon-text {
+    color: #00bcd4; /* Cyan neon */
+    text-shadow: 0px 0px 10px #00bcd4, 0px 0px 20px #00bcd4;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+    box-shadow: 0px 0px 15px rgba(0, 188, 212, 0.4);
+    backdrop-filter: blur(10px);
     animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Glassmorphism Effect */
-.container {
-    width: 85%;
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 30px;
-    backdrop-filter: blur(12px) brightness(0.3);
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Heading Styles */
+/* Headings */
 h1, h2 {
-    color: white;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+    color: #00bcd4;
+    text-shadow: 0px 0px 10px rgba(0, 188, 212, 0.8);
 }
 
-/* Navigation Buttons */
+/* Buttons */
 .nav-buttons {
-    margin-top: 20px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.nav-buttons a {
-    text-decoration: none;
+    gap: 15px;
 }
 
 .nav-buttons button {
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: linear-gradient(45deg, #00bcd4, #ff4081);
+    color: white;
+    border: none;
     padding: 12px 20px;
     font-size: 18px;
-    color: white;
+    font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
+    box-shadow: 0px 0px 15px #00bcd4;
+    transition: 0.3s ease-in-out;
 }
 
 .nav-buttons button:hover {
-    background: rgba(255, 255, 255, 0.4);
+    background: linear-gradient(45deg, #ff4081, #00bcd4);
+    box-shadow: 0px 0px 25px #ff4081;
+    transform: scale(1.1);
 }
 
-/* List Items */
+/* List Styling */
 ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 li {
-    background: rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+    font-weight: 500;
     padding: 12px;
-    border-radius: 6px;
-    margin: 10px 0;
-    transition: 0.3s;
+    margin: 8px 0;
+    border-radius: 5px;
+    background: rgba(0, 188, 212, 0.2);
+    box-shadow: 0px 0px 10px rgba(0, 188, 212, 0.3);
+    transition: 0.3s ease-in-out;
 }
 
 li:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-/* Footer Navigation */
-.footer {
-    margin-top: auto;
-    padding: 20px;
-    text-align: center;
+    background: rgba(255, 64, 129, 0.5);
+    box-shadow: 0px 0px 20px #ff4081;
+    transform: translateY(-3px);
 }
 
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
