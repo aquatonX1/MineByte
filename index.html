@@ -5,112 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MineByte</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* General Styling */
-        body { 
-            font-family: 'Inter', sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            background-color: #ffffff; 
-            color: #000000; 
-            text-align: center;
-        }
-
-        /* Container */
-        .container { 
-            max-width: 800px; 
-            margin: 50px auto; 
-            background: #f5f5f5; 
-            padding: 30px; 
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Title */
-        h1 { 
-            font-size: 38px; 
-            font-weight: 700;
-            margin-bottom: 20px; 
-        }
-
-        /* Section Titles */
-        h2 { 
-            font-size: 26px; 
-            font-weight: 600;
-            margin-top: 40px; 
-            padding-bottom: 10px;
-            border-bottom: 2px solid #000000;
-            display: inline-block;
-        }
-
-        /* Paragraph */
-        p { 
-            font-size: 18px; 
-            font-weight: 400;
-            line-height: 1.6; 
-            margin-bottom: 20px;
-        }
-
-        /* List Styling */
-        ul { 
-            list-style-type: none; 
-            padding: 0;
-            margin-top: 10px;
-        }
-
-        li { 
-            font-size: 18px; 
-            font-weight: 400;
-            background: #e0e0e0; 
-            padding: 12px; 
-            border-radius: 5px; 
-            margin-bottom: 10px;
-            transition: background 0.3s;
-        }
-
-        li:hover {
-            background: #d0d0d0;
-        }
-
-        /* Navigation Buttons */
-        .nav-buttons {
-            margin-bottom: 30px;
-        }
-
-        .nav-buttons a {
-            text-decoration: none;
-            margin: 10px;
-        }
-
-        .nav-buttons button {
-            background: black;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .nav-buttons button:hover {
-            background: gray;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <!-- Navigation Buttons -->
-        <div class="nav-buttons">
-            <a href="connect.html"><button>How to Join</button></a>
-            <a href="store.html"><button>Ranks & Store</button></a>
-        </div>
+    <img src="logo.png" alt="MineByte Logo" class="logo">
 
+    <div class="container">
         <h1>MineByte</h1>
-        <p>Welcome to MineByte, a Lifesteal SMP with custom world generation and many unique features. 
-        While there are no crates or custom weapons, the server offers an exciting and dynamic experience.</p>
+        <p>Welcome to MineByte, a Lifesteal SMP with custom world generation and many unique features.</p>
 
         <h2>Server Rules</h2>
         <ul>
@@ -137,6 +40,11 @@
         <p>Breaking any rule may result in a warning, mute, temporary ban, or permanent ban, depending on the severity.</p>
 
         <p><b>Can you survive the chaos? Join us and prove it!</b></p>
+    </div>
+
+    <div class="nav-buttons">
+        <a href="connect.html"><button>How to Join</button></a>
+        <a href="store.html"><button>Ranks & Store</button></a>
     </div>
 
 </body>
