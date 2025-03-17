@@ -3,51 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MineByte - Rules</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Join MineByte, a thrilling Lifesteal SMP Minecraft server with custom world generation and unique features. Survive the chaos and prove your skills!">
+    <meta name="keywords" content="Minecraft, Lifesteal, SMP, MineByte, Minecraft Server">
+    <title>MineByte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables for Easy Customization */
+        :root {
+            --primary-color: #1a1a1a;
+            --secondary-color: #4a90e2;
+            --background-color: #f5f5f5;
+            --text-color: #333333;
+            --accent-color: #ff4757;
+            --gradient-start: #6a11cb;
+            --gradient-end: #2575fc;
+        }
+
+        /* General Styling */
+        body { 
+            font-family: 'Inter', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            color: var(--text-color); 
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Container */
+        .container { 
+            max-width: 800px; 
+            margin: 20px; 
+            background: rgba(255, 255, 255, 0.9); 
+            padding: 30px; 
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Title */
+        h1 { 
+            font-size: 42px; 
+            font-weight: 700;
+            margin-bottom: 20px; 
+            color: var(--primary-color);
+        }
+
+        /* Section Titles */
+        h2 { 
+            font-size: 28px; 
+            font-weight: 600;
+            margin-top: 40px; 
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+            display: inline-block;
+            color: var(--primary-color);
+        }
+
+        /* Paragraph */
+        p { 
+            font-size: 18px; 
+            font-weight: 400;
+            line-height: 1.6; 
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+
+        /* List Styling */
+        ul { 
+            list-style-type: none; 
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        li { 
+            font-size: 18px; 
+            font-weight: 400;
+            background: rgba(224, 224, 224, 0.8); 
+            padding: 15px; 
+            border-radius: 8px; 
+            margin-bottom: 10px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        li:hover {
+            background: rgba(208, 208, 208, 0.9);
+            transform: translateY(-3px);
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            margin-bottom: 30px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+        }
+
+        .nav-buttons button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav-buttons button:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        .nav-buttons button:focus {
+            outline: 2px solid var(--accent-color);
+        }
+
+        /* Call-to-Action Button */
+        .cta-button {
+            margin-top: 30px;
+        }
+
+        .cta-button button {
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button button:hover {
+            background: #ff6b81;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            .nav-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .nav-buttons button {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Background Image -->
-    <div class="background-overlay"></div>
-
-    <!-- Logo -->
-    <img src="logo.png" alt="MineByte Logo" class="logo">
-
-    <!-- Main Content -->
     <div class="container">
-        <h1>MineByte - Rules</h1>
-        <p>Ensure fair play and respect within the community by following these rules.</p>
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <a href="connect.html"><button>How to Join</button></a>
+            <a href="store.html"><button>Ranks & Store</button></a>
+        </div>
 
-        <h2>📜 Server Rules</h2>
+        <h1>MineByte</h1>
+        <p>Welcome to MineByte, a Lifesteal SMP with custom world generation and many unique features. 
+        While there are no crates or custom weapons, the server offers an exciting and dynamic experience.</p>
+
+        <h2>Server Rules</h2>
         <ul>
-            <li><b>Griefing:</b> Allowed - Destroy enemy bases and raid players.</li>
-            <li><b>Trapping:</b> Allowed - Portal traps, base traps, and ambushes are fair game.</li>
-            <li><b>Stealing:</b> Allowed - If it's not protected, it's yours.</li>
-            <li><b>PvP & Killing:</b> Allowed - Attack, ambush, or hunt other players.</li>
-            <li><b>Hacking & Exploits:</b> Forbidden - X-ray, autoclickers, hacked clients, etc.</li>
-            <li><b>DDoS & Doxxing:</b> Strictly Prohibited - Real-world threats will result in a permanent ban.</li>
-            <li><b>Lag Machines:</b> Not Allowed - Do not attempt to crash the server.</li>
-            <li><b>Spamming & Advertising:</b> Prohibited - No advertising other servers or spamming chat.</li>
+            <li><b>Griefing</b> – Destroy enemy bases, loot chests, and raid players.</li>
+            <li><b>Trapping</b> – Portal traps, base traps, and other player traps are fair game.</li>
+            <li><b>Stealing</b> – If it's not protected, it's yours for the taking.</li>
+            <li><b>PvP & Killing</b> – Attack, ambush, or hunt other players as you see fit.</li>
+            <li><b>Hacking & Exploits</b> – X-ray, autoclickers, hacked clients, etc., are strictly forbidden.</li>
+            <li><b>DDoS & Doxxing</b> – Any real-world threats will result in a permanent ban.</li>
+            <li><b>Lag Machines</b> – Causing lag or crashing the server is prohibited.</li>
+            <li><b>Spamming & Advertising</b> – No advertising other servers or spamming chat.</li>
         </ul>
 
-        <h2>💬 Discord Rules</h2>
+        <h2>Discord Rules</h2>
         <ul>
-            <li><b>Be Respectful:</b> No harassment, discrimination, or excessive toxicity.</li>
-            <li><b>No NSFW Content:</b> Keep it safe for all members.</li>
-            <li><b>No Spam or Self-Promo:</b> Unless approved by staff.</li>
-            <li><b>Follow Discord TOS:</b> Breaking Discord’s terms will result in removal.</li>
-            <li><b>Listen to Staff:</b> Staff decisions are final.</li>
+            <li><b>Be Respectful</b> – No harassment, discrimination, or excessive toxicity.</li>
+            <li><b>No NSFW Content</b> – Keep it safe for all members.</li>
+            <li><b>No Spam or Self-Promo</b> – Unless approved by staff.</li>
+            <li><b>Follow Discord TOS</b> – Breaking Discord’s terms will get you banned.</li>
+            <li><b>Listen to Staff</b> – Their decisions are final.</li>
         </ul>
 
-        <h2>⚖️ Punishments</h2>
-        <p>Breaking any rule may result in a warning, mute, temporary ban, or permanent ban depending on severity.</p>
-    </div>
+        <h2>Punishments</h2>
+        <p>Breaking any rule may result in a warning, mute, temporary ban, or permanent ban, depending on the severity.</p>
 
-    <!-- Footer Navigation -->
-    <div class="footer nav-buttons">
-        <a href="connect.html"><button>How to Join</button></a>
-        <a href="store.html"><button>Ranks & Store</button></a>
+        <p><b>Can you survive the chaos? Join us and prove it!</b></p>
+        <div class="cta-button">
+            <a href="connect.html"><button>Join Now</button></a>
+        </div>
     </div>
 
 </body>
