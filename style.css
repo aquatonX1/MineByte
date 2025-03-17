@@ -1,48 +1,50 @@
 /* General Styling */
-body { 
+body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background: url(https://static.vecteezy.com/system/resources/previews/042/533/761/non_2x/black-and-blue-gradient-mesh-background-with-elegant-and-clean-style-vector.jpg) no-repeat center center fixed;
+    background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #ffffff;
+    color: white;
     text-align: center;
-}
-
-/* Container */
-.container { 
-    max-width: 800px;
-    margin: 50px auto;
-    background: rgba(20, 20, 20, 0.9);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Logo */
 .logo {
-    width: 200px;
     display: block;
     margin: 20px auto;
+    width: 150px; /* Adjust size as needed */
 }
 
-/* Titles */
+/* Container - No Box, Directly on Background */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+/* Headings */
+h1, h2 {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
 h1 {
     font-size: 38px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #ffcc00;
 }
 
 h2 {
     font-size: 26px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 40px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #ffcc00;
+    border-bottom: 2px solid white;
     display: inline-block;
 }
 
+/* Paragraphs */
 p {
     font-size: 18px;
     font-weight: 400;
@@ -50,7 +52,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* List Styling */
+/* Lists */
 ul {
     list-style-type: none;
     padding: 0;
@@ -60,20 +62,24 @@ ul {
 li {
     font-size: 18px;
     font-weight: 400;
-    background: #333;
     padding: 12px;
     border-radius: 5px;
-    margin-bottom: 10px;
-    transition: background 0.3s;
 }
 
-li:hover {
-    background: #444;
+/* Rank Sections */
+.rank {
+    background: rgba(0, 0, 0, 0.6); /* Transparent black for better readability */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-/* Bottom Navigation Buttons */
+/* Navigation Buttons */
 .nav-buttons {
-    margin-top: 30px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-buttons a {
@@ -82,8 +88,8 @@ li:hover {
 }
 
 .nav-buttons button {
-    background: #ffcc00;
-    color: black;
+    background: black;
+    color: white;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
@@ -93,5 +99,5 @@ li:hover {
 }
 
 .nav-buttons button:hover {
-    background: #ffaa00;
+    background: gray;
 }
