@@ -16,65 +16,24 @@ body {
     width: 150px; /* Adjust size as needed */
 }
 
-/* Container - No Box, Directly on Background */
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 30px;
-}
-
 /* Headings */
 h1, h2 {
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-h1 {
-    font-size: 38px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
 h2 {
-    font-size: 26px;
-    font-weight: 600;
-    margin-top: 40px;
-    padding-bottom: 10px;
     border-bottom: 2px solid white;
-    display: inline-block;
 }
 
-/* Paragraphs */
-p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.6;
-    margin-bottom: 20px;
+/* Container - No Box */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
 }
 
-/* Lists */
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-li {
-    font-size: 18px;
-    font-weight: 400;
-    padding: 12px;
-    border-radius: 5px;
-}
-
-/* Rank Sections */
-.rank {
-    background: rgba(0, 0, 0, 0.6); /* Transparent black for better readability */
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-/* Navigation Buttons */
+/* Navigation Buttons at Bottom */
 .nav-buttons {
     position: fixed;
     bottom: 20px;
